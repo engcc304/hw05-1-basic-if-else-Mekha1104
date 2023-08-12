@@ -15,7 +15,7 @@
 #include <string>
 
 int main() {
-    std::cout << "Please enter characters: ";
+    std::cout << "Please enter characters:";
     std::string input;
     std::cin >> input;
 
@@ -24,7 +24,7 @@ int main() {
         return 1;
     }
 
-    std::cout << "ผลลัพธ์: ";
+    std::cout << "Result: ";
     for (int i = input.length() - 1; i >= 0; i--) {
         std::cout << input[i] << " ";
     }
