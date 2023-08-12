@@ -15,7 +15,7 @@
 #include <string>
 
 int main() {
-    std::cout << "Please enter characters:";
+    std::cout << "Please enter characters:\n";
     std::string input;
     std::cin >> input;
 
