@@ -11,3 +11,23 @@
     Output:
         Result: D C B A
 */
+#include <iostream>
+#include <string>
+
+int main() {
+    std::cout << "Please enter characters: ";
+    std::string input;
+    std::cin >> input;
+
+    if (input.length() != 4) {
+        std::cout << "Please enter characters\n";
+        return 1;
+    }
+
+    std::cout << "ผลลัพธ์: ";
+    for (int i = input.length() - 1; i >= 0; i--) {
+        std::cout << input[i] << " ";
+    }
+    
+    return 0;
+}
