@@ -11,114 +11,15 @@
     Output:
         Result: D C B A
 */
-#include <iostream>
-#include <string>
+#include <stdio.h>
 
 int main() {
-    char input1, input2, input3, input4;
+    char char1, char2, char3, char4;
 
-    std::cout << "Please enter characters: ";
-    std::cin >> input1 >> input2 >> input3 >> input4;
+    printf("Enter 4 characters:\n");
+    scanf(" %c %c %c %c", &char1, &char2, &char3, &char4);
 
-    std::cout << "Result: ";
-
-    if (input1 >= input2 && input1 >= input3 && input1 >= input4) {
-        std::cout << input1 << " ";
-        if (input2 >= input3 && input2 >= input4) {
-            std::cout << input2 << " ";
-            if (input3 >= input4) {
-                std::cout << input3 << " " << input4;
-            } else {
-                std::cout << input4 << " " << input3;
-            }
-        } else if (input3 >= input2 && input3 >= input4) {
-            std::cout << input3 << " ";
-            if (input2 >= input4) {
-                std::cout << input2 << " " << input4;
-            } else {
-                std::cout << input4 << " " << input2;
-            }
-        } else {
-            std::cout << input4 << " ";
-            if (input2 >= input3) {
-                std::cout << input2 << " " << input3;
-            } else {
-                std::cout << input3 << " " << input2;
-            }
-        }
-    } else if (input2 >= input1 && input2 >= input3 && input2 >= input4) {
-        std::cout << input2 << " ";
-        if (input1 >= input3 && input1 >= input4) {
-            std::cout << input1 << " ";
-            if (input3 >= input4) {
-                std::cout << input3 << " " << input4;
-            } else {
-                std::cout << input4 << " " << input3;
-            }
-        } else if (input3 >= input1 && input3 >= input4) {
-            std::cout << input3 << " ";
-            if (input1 >= input4) {
-                std::cout << input1 << " " << input4;
-            } else {
-                std::cout << input4 << " " << input1;
-            }
-        } else {
-            std::cout << input4 << " ";
-            if (input1 >= input3) {
-                std::cout << input1 << " " << input3;
-            } else {
-                std::cout << input3 << " " << input1;
-            }
-        }
-    } else if (input3 >= input1 && input3 >= input2 && input3 >= input4) {
-        std::cout << input3 << " ";
-        if (input1 >= input2 && input1 >= input4) {
-            std::cout << input1 << " ";
-            if (input2 >= input4) {
-                std::cout << input2 << " " << input4;
-            } else {
-                std::cout << input4 << " " << input2;
-            }
-        } else if (input2 >= input1 && input2 >= input4) {
-            std::cout << input2 << " ";
-            if (input1 >= input4) {
-                std::cout << input1 << " " << input4;
-            } else {
-                std::cout << input4 << " " << input1;
-            }
-        } else {
-            std::cout << input4 << " ";
-            if (input1 >= input2) {
-                std::cout << input1 << " " << input2;
-            } else {
-                std::cout << input2 << " " << input1;
-            }
-        }
-    } else {
-        std::cout << input4 << " ";
-        if (input1 >= input2 && input1 >= input3) {
-            std::cout << input1 << " ";
-            if (input2 >= input3) {
-                std::cout << input2 << " " << input3;
-            } else {
-                std::cout << input3 << " " << input2;
-            }
-        } else if (input2 >= input1 && input2 >= input3) {
-            std::cout << input2 << " ";
-            if (input1 >= input3) {
-                std::cout << input1 << " " << input3;
-            } else {
-                std::cout << input3 << " " << input1;
-            }
-        } else {
-            std::cout << input3 << " ";
-            if (input1 >= input2) {
-                std::cout << input1 << " " << input2;
-            } else {
-                std::cout << input2 << " " << input1;
-            }
-        }
-    }
+    printf("Result: %c %c %c %c\n", char4, char3, char2, char1);
 
     return 0;
 }
